@@ -16,7 +16,8 @@ namespace Evaluation_Manager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmLogin());
+            Application.Run(new FrmStudents());
+            //Application.Run(new FrmLogin());
         }
     }
 }
