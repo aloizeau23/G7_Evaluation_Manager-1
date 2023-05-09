@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.username = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -55,22 +55,22 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Password:";
             // 
-            // textBox1
+            // username
             // 
-            this.textBox1.Location = new System.Drawing.Point(101, 15);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 22);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.username.Location = new System.Drawing.Point(101, 15);
+            this.username.Margin = new System.Windows.Forms.Padding(4);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(132, 22);
+            this.username.TabIndex = 2;
+            this.username.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // password
             // 
-            this.textBox2.Location = new System.Drawing.Point(101, 55);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 22);
-            this.textBox2.TabIndex = 3;
+            this.password.Location = new System.Drawing.Point(101, 55);
+            this.password.Margin = new System.Windows.Forms.Padding(4);
+            this.password.Name = "password";
+            this.password.Size = new System.Drawing.Size(132, 22);
+            this.password.TabIndex = 3;
             // 
             // button1
             // 
@@ -89,8 +89,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(268, 149);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.password);
+            this.Controls.Add(this.username);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -101,6 +101,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,8 +111,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox username;
+        private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Button button1;
     }
 }

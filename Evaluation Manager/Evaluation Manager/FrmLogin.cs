@@ -19,10 +19,32 @@ namespace Evaluation_Manager
 
         private void button1_Click(object sender, EventArgs e)
         {
+            /*if (password.Text == "test" && username.Text == "teacher")
+            {
+                Application.Run(new FrmStudents());
+            }*/
+            string Username = username.Text;
+            string Password = password.Text;
 
+            if (Username == "teacher" && Password == "test")
+            {
+                FrmStudents frmStudents = new FrmStudents();
+                Hide();
+                frmStudents.ShowDialog();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("Wrong crendentials");
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
         {
 
         }
