@@ -21,5 +21,10 @@ namespace Evaluation_Manager
         {
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
