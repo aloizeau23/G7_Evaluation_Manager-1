@@ -125,6 +125,7 @@
             this.txtActivityDescription.ReadOnly = true;
             this.txtActivityDescription.Size = new System.Drawing.Size(776, 187);
             this.txtActivityDescription.TabIndex = 9;
+            this.txtActivityDescription.TextChanged += new System.EventHandler(this.txtActivityDescription_TextChanged);
             // 
             // label6
             // 

@@ -53,6 +53,12 @@ namespace Evaluation_Manager
             txtActivityDescription.Text = selectedActivity.Description;
             txtMinForGrade.Text = selectedActivity.MinPointsForGrade.ToString();
             txtMinForSignature.Text = selectedActivity.MinPointsForSignature.ToString();
+
+            Evaluation evaluation = EvaluationRepository.GetEvaluation(selectedStudent, selectedActivity);
+
+            numPoints.Value = evaluation.Points;
+            txtTeacher.Text = evaluation.Evaluator.ToString();
+            txtEvaluationDate.Text = evaluation.EvaluationDate.ToString();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -63,6 +69,11 @@ namespace Evaluation_Manager
         private void btnSave_Click(object sender, EventArgs e)
         {
             // TODO - Save score to database
+        }
+
+        private void txtActivityDescription_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
