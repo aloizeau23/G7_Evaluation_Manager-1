@@ -46,5 +46,11 @@ namespace Evaluation_Manager
             FrmEvaluation frmEvaluation = new FrmEvaluation(selectedStudent);
             frmEvaluation.ShowDialog();
         }
+
+        private void btnShowReport_Click(object sender, EventArgs e)
+        {
+            FrmStudentReport frmStudentReport = new FrmStudentReport();
+            frmStudentReport.ShowDialog();
+        }
     }
 }

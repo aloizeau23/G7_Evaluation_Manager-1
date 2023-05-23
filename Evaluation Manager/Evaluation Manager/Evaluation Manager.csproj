@@ -56,6 +56,12 @@
     <Compile Include="FrmEvaluation.Designer.cs">
       <DependentUpon>FrmEvaluation.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmStudentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudentReport.Designer.cs">
+      <DependentUpon>FrmStudentReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmStudents.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,7 @@
     <Compile Include="Models\Activity.cs" />
     <Compile Include="Models\Evaluation.cs" />
     <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\StudentReportView.cs" />
     <Compile Include="Models\Teacher.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Program.cs" />
@@ -84,6 +91,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudentReport.resx">
+      <DependentUpon>FrmStudentReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmStudents.resx">
       <DependentUpon>FrmStudents.cs</DependentUpon>
